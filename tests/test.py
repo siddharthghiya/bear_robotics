@@ -109,13 +109,3 @@ class TestATM(unittest.TestCase):
         err, balance = testATM.DoOperation(sessionID, 'C')
         self.assertIsNone(err)
         self.assertEqual(balance, 4500)
-
-
-        
-
-
-
-
-
-
-
