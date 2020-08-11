@@ -1,8 +1,11 @@
 class ATM():
     def __init__(self, bank):
+        '''ATM must be intialised with compatible Bank'''
         self.bank = bank
 
     def InsertCard(self, cardNumber):
+        '''Method for defining what happens when user inserts a card'''
+        
         #check if the user exists
         if (not self.bank.DoesUserExist(cardNumber)):
             print("User does not exist, please try again")
