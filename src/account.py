@@ -1,5 +1,5 @@
 from .errors import *
-from threading import Lock
+# from threading import Lock
 
 class Account():
     def __init__(self, balance = 0):
